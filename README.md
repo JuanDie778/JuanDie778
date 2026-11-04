@@ -10,35 +10,43 @@ Mi aprendizaje es completamente autónomo y nace de un entusiasmo genuino por la
 
 ## 🏆 Proyecto Insignia: KineTopus-Engine (SciML Research)
 
-### 🔬 **[KineTopus-Engine — White-Box Stochastic Differential Equation (SDE) Discovery](https://github.com/JuanDie778/KineTopus-Engine)**
-> *Mi proyecto principal de investigación en física computacional aplicada y modelado cuantitativo de series temporales complejas.*
+### 🔬 **[KineTopus-Engine — Descubrimiento de Ecuaciones Diferenciales Estocásticas (SDEs)](https://github.com/JuanDie778/KineTopus-Engine)**
+> *Mi principal proyecto de investigación en física computacional aplicada a series temporales complejas y mercados dinámicos.*
 
 * 📄 **Preprint Científico en SSRN:** [SSRN Abstract 7431018](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7431018)
 * 🚀 **Demostrador en Vivo:** Desplegado en Hugging Face Spaces con telemetría interactiva.
-* ⚡ **Arquitectura & Logros Clave:**
-  * **Descubrimiento Analítico White-Box:** Pipeline SciML riguroso que combina SINDy, aproximación racional adaptativa y $C^2$ Splines para descubrir ecuaciones diferenciales estocásticas directamente desde datos sin el retardo (*lag*) clásico de indicadores técnicos tradicionales.
-  * **Inferencia Sub-Milisegundo en CPU:** Optimización analítica vectorizada en NumPy puro que elimina la dependencia de hardware GPU para entornos de producción de baja latencia.
-  * **Validación Causal Implacable:** Evaluación mediante *Walk-Forward* temporal estricto contra sesgos de sobreajuste (*data-snooping*) y 0.0% de singularidades bajo simulaciones de Monte Carlo.
+* **¿Qué problema resuelve?**  
+  Los indicadores técnicos clásicos (medias móviles, osciladores) siempre van con retraso (*lag*) y las redes neuronales opacas suelen fallar ante cambios de régimen. KineTopus descubre analíticamente la "ecuación física gobernante" que describe la dinámica del dato en tiempo real.
+* **Aspectos Técnicos Destacados:**
+  * Inferencia ultra-rápida en CPU (vectorizada en NumPy puro, sin requerir GPUs costosas).
+  * Rigor causal estricto mediante particionado *Walk-Forward* (cero sobreajuste temporal).
+  * 0.0% de singularidades numéricas evaluadas bajo simulaciones de Monte Carlo.
 
 ---
 
-## 🛠️ Proyectos de Dominio Abiertos (Open Source Sectorial Engines)
+## 🛠️ Motores Sectoriales de Código Abierto (Open Source Sectorial Engines)
 
-- 🏦 **[crossborder-fx-reconciliation](https://github.com/JuanDie778/crossborder-fx-reconciliation)**  
-  *Institutional Cross-Border FX Risk & Double-Entry CashMatch Engine (FinTech).*  
-  Ledger contable de partida doble inmutable con encadenamiento criptográfico SHA-256, cero números flotantes IEEE-754 (unidades enteras menores con redondeo bancario contable), cálculo Monte Carlo de $\text{VaR}_{99\%}$ y $\text{CVaR}_{99\%}$ con reversión a la media mediante difusión de Ornstein-Uhlenbeck y detección automatizada de *fee-skimming* bancario.
+*Colección de librerías y soluciones de software diseñadas para resolver ineficiencias críticas en industrias clave:*
 
-- ⚙️ **[whitebox-dyn-discovery](https://github.com/JuanDie778/whitebox-dyn-discovery)**  
-  *Parsimonious Dynamical Discovery & SciML Suite.*  
-  Identificación analítica de sistemas gobernantes no lineales mediante regresión STRidge y filtrado derivativo regularizado Savitzky-Golay $C^2$ (reducción de ruido de $4.7\times$), logrando inferencia analítica en **0.32 ms en CPU**.
+### 🏦 **[crossborder-fx-reconciliation — Pagos Internacionales y FinTech](https://github.com/JuanDie778/crossborder-fx-reconciliation)**
+* **El Problema:** En transferencias internacionales B2B (universidades, comercio exterior), los bancos intermediarios suelen deducir comisiones opacas no notificadas (*fee-skimming* de 15€–35€) y los tipos de cambio fluctúan mientras el dinero viaja, provocando que lleguen facturas incompletas y descuadres contables que exigen semanas de revisión manual.
+* **La Solución:** Un motor de conciliación bancaria automatizada con un libro mayor inmutable de partida doble (encadenamiento SHA-256). Prohíbe el uso de números flotantes para evitar errores de céntimos y simula el riesgo cambiario mediante procesos estocásticos de reversión a la media (Ornstein-Uhlenbeck) con métricas de $\text{VaR}_{99\%}$.
+* **¿Dónde se aplica?** Pasarelas de pago transfronterizas (Flywire, Wise, Stripe) y departamentos de tesorería corporativa.
 
-- 🥬 **[perishable-flow-engine](https://github.com/JuanDie778/perishable-flow-engine)**  
-  *Perishable Inventory Stochastic Policy & FEFO Rotation Engine.*  
-  Arquitectura Hexagonal DDD pura, gestión estocástica de inventario fresco con rotación FEFO estricta y simulación Monte Carlo de roturas de stock bajo demanda asimétrica con persistencia SQLite ACID.
+### ⚙️ **[whitebox-dyn-discovery — Mantenimiento Predictivo e Industria 4.0](https://github.com/JuanDie778/whitebox-dyn-discovery)**
+* **El Problema:** En maquinaria industrial crítica (compresores de frío, turbinas, motores), las redes neuronales estándar son "cajas negras": no pueden explicar por qué fallan y requieren hardware muy caro para correr en la fábrica.
+* **La Solución:** Identifica la ecuación matemática exacta del desgaste físico usando técnicas de SciML (SINDy y regularización polinómica Savitzky-Golay $C^2$ que filtra $4.7\times$ el ruido de los sensores). Realiza pronósticos en **0.32 milisegundos en CPU estándar**, permitiendo anticipar averías directamente en el microcontrolador de la máquina.
+* **¿Dónde se aplica?** Gemelos digitales, plantas industriales, monitorización de flotas y robótica.
 
-- 🎟️ **[event-yield-manager](https://github.com/JuanDie778/event-yield-manager)**  
-  *Holistic Venue Yield Management & Offline-First CRDT Access Engine.*  
-  Algoritmia de pricing dinámico basada en curvas de ritmo de reserva y control de acceso offline tolerante a particiones con CRDTs G-Set y firmas HMAC-SHA256 en 17 µs.
+### 🥬 **[perishable-flow-engine — Retail, Supermercados y Dark Stores](https://github.com/JuanDie778/perishable-flow-engine)**
+* **El Problema:** Vender productos frescos (fruta, verdura, carne) en e-commerce tiene una trampa matemática asimétrica: si compras de más, la comida caduca y se tira a la basura (pérdida directa de margen); si compras de menos, el cliente recibe el pedido incompleto y se va a la competencia.
+* **La Solución:** Un motor estocástico de inventario que simula miles de escenarios de demanda y retrasos de proveedores bajo rotación FEFO estricta (*First Expired, First Out*). Encuentra el punto exacto de reposición para maximizar el margen neto, logrando más del 99% de disponibilidad con 0% de comida desperdiciada.
+* **¿Dónde se aplica?** Cadenas de supermercados (Mercadona Tech, Consum, Carrefour), dark stores de delivery rápido y distribución farmacéutica perecedera.
+
+### 🎟️ **[event-yield-manager — Ticketing, Conciertos y Ocio Nocturno](https://github.com/JuanDie778/event-yield-manager)**
+* **El Problema:** Los eventos masivos pierden miles de euros fijando precios estáticos de entradas (o cobrando demasiado pronto o dejando salas medio vacías). Además, en la puerta de acceso el internet móvil suele colapsar por saturación de red, provocando colas interminables o tickets duplicados por fraude.
+* **La Solución:** Un sistema integral que ajusta los precios en tiempo real según el ritmo de venta deseado (+8.5% de recaudación optimizada) y un motor de validación de entradas fuera de línea mediante algoritmos distribuidos (**CRDTs G-Set** con firmas HMAC-SHA256 en 17 microsegundos), permitiendo escanear accesos sin internet y sin riesgo de duplicidad.
+* **¿Dónde se aplica?** Plataformas de venta de entradas (Fourvenues, Ticketmaster, DICE), festivales y recintos de ocio.
 
 ---
 
