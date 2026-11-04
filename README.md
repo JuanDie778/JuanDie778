@@ -30,7 +30,7 @@ Mi aprendizaje es completamente autónomo y nace de un entusiasmo genuino por la
 
 ### 🏦 **[crossborder-fx-reconciliation — Pagos Internacionales y FinTech](https://github.com/JuanDie778/crossborder-fx-reconciliation)**
 * **El Problema:** En transferencias internacionales B2B (universidades, comercio exterior), los bancos intermediarios suelen deducir comisiones opacas no notificadas (*fee-skimming* de 15€–35€) y los tipos de cambio fluctúan mientras el dinero viaja, provocando que lleguen facturas incompletas y descuadres contables que exigen semanas de revisión manual.
-* **La Solución:** Un motor de conciliación bancaria automatizada con un libro mayor inmutable de partida doble (encadenamiento SHA-256). Prohíbe el uso de números flotantes para evitar errores de céntimos y simula el riesgo cambiario mediante procesos estocásticos de reversión a la media (Ornstein-Uhlenbeck) con métricas de $\text{VaR}_{99\%}$.
+* **La Solución:** Un motor de conciliación bancaria automatizada con un libro mayor inmutable de partida doble (encadenamiento SHA-256). Prohíbe el uso de números flotantes para evitar errores de céntimos y simula el riesgo cambiario mediante procesos estocásticos de reversión a la media (Ornstein-Uhlenbeck) con métricas de VaR (99%).
 * **¿Dónde se aplica?** Pasarelas de pago transfronterizas (Flywire, Wise, Stripe) y departamentos de tesorería corporativa.
 
 ### ⚙️ **[whitebox-dyn-discovery — Mantenimiento Predictivo e Industria 4.0](https://github.com/JuanDie778/whitebox-dyn-discovery)**
