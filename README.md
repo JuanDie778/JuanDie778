@@ -1,6 +1,10 @@
-# Juan Diego Ussa Aponte 👋
+# ¡Hola! Soy Juan Diego 👋
 **Quantitative Systems Developer & High-Agency Technical Builder**  
 *Valencia, Spain • Specializing in Scientific Machine Learning (SciML), Stochastic Systems & FinTech Architectures*
+
+Me apasiona hacer fácil lo difícil. Utilizo una mentalidad analítica influenciada por la rigurosidad de la física, las matemáticas aplicadas y la perspectiva de la filosofía para modelar sistemas complejos y tomar decisiones óptimas basadas en datos. 
+
+Mi aprendizaje es completamente autónomo y nace de un entusiasmo genuino por la tecnología y la resolución de problemas reales. No espero a que me enseñen las soluciones; investigo los primeros principios y construyo la infraestructura matemática y de software para encontrarlas.
 
 ---
 
